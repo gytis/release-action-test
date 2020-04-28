@@ -21,6 +21,7 @@ jobs:
       run: |
         git config --local user.email "gytis@redhat.com"
         git config --local user.name "Gytis Trikleris"
+        git checkout master
         mvn release:prepare -B -DreleaseVersion=${{ env.RELEASE_VERSION }}
     - name: Perform release
       run: mvn release:perform -B
