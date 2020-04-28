@@ -8,6 +8,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Maven release action
-      uses: gytis/maven-release-action
+      uses: gytis/maven-release-action@master
       with:
         releaseVersion: some version
