@@ -1,0 +1,13 @@
+name: Maven release action
+on:
+  push:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Maven release action
+      uses: gytis/maven-release-action
+      with:
+        releaseVersion: some version
