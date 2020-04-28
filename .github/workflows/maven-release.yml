@@ -10,4 +10,4 @@ jobs:
     - name: Maven release action
       uses: gytis/maven-release-action@master
       with:
-        token: ${{ env.GITHUB_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}
