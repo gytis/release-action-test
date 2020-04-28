@@ -9,8 +9,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Get release version
-      run: |
-        RELEASE_VERSION=$(echo $GITHUB_REF | sed 's/refs\/tags\/release-//')
-        echo "::set-env RELEASE_VERSION=${RELEASE_VERSION}"
+      run: echo "::set-env release_version=$(echo $GITHUB_REF | sed 's/refs\/tags\/release-//')"
     - name: Print release version
-      run: echo "Gonna release ${RELEASE_VERSION}!"
+      run: echo "Gonna release ${{ env.release_version }}!"
