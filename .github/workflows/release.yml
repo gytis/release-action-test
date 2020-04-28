@@ -11,6 +11,6 @@ jobs:
     - name: Get release version
       run: |
         RELEASE_VERSION=$(echo $GITHUB_REF | sed 's/refs\/tags\/release-//')
-        # echo "::set-env RELEASE_VERSION=${RELEASE_VERSION}"
+        echo "::set-env RELEASE_VERSION=${RELEASE_VERSION}"
     - name: Print release version
       run: echo "Gonna release ${RELEASE_VERSION}!"
