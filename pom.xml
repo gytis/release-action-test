@@ -4,7 +4,7 @@
 
   <groupId>dev.snowdrop</groupId>
   <artifactId>release-action-test</artifactId>
-  <version>1.0.15-SNAPSHOT</version>
+  <version>1.0.16-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Release action test</name>
