@@ -27,6 +27,8 @@ jobs:
         git checkout -B ${{env.TEMP_BRANCH}}
     - name: Prepare release
       run: mvn release:prepare -B -DreleaseVersion=${{env.RELEASE_VERSION}}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Perform release
       run: mvn release:perform -B
     - name: Cleanup git
