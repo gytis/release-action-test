@@ -5,11 +5,12 @@ on: push
 jobs:
   release:
     if: ${{startsWith(github.ref, 'refs/tags/release-')}}
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
-
-    - name: Run a one-line script
-      run: echo Hello, world at ${GITHUB_REF}!
+    - name: Get release version
+      run: |
+        RELEASE_VERSION=$(echo $GITHUB_REF | sed 's/refs\/tags\/release-//')
+        # echo "::set-env RELEASE_VERSION=${RELEASE_VERSION}"
+    - name: Print release version
+      run: echo "Gonna release ${RELEASE_VERSION}!"
