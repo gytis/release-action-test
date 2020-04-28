@@ -4,7 +4,7 @@
 
   <groupId>dev.snowdrop</groupId>
   <artifactId>release-action-test</artifactId>
-  <version>1.0.7</version>
+  <version>1.0.8-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Release action test</name>
@@ -15,7 +15,7 @@
     <url>https://github.com/gytis/release-action-test</url>
     <connection>scm:git:https://github.com/gytis/release-action-test.git</connection>
     <developerConnection>scm:git:git@github.com:gytis/release-action-test.git</developerConnection>
-    <tag>release-action-test-1.0.7</tag>
+    <tag>release-action-test-1.0.0</tag>
   </scm>
 
   <profiles>
