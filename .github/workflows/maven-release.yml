@@ -11,3 +11,6 @@ jobs:
       uses: gytis/maven-release-action@master
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
+        releaseVersion: 1.0.0
+        developmentVersion: 1.0.1-SNAPSHOT 
+        tag: 1.0.0
