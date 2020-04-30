@@ -1,4 +1,4 @@
-name: release
+name: Release
 on:
   push:
     branches: [ master ]
@@ -7,9 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: release
+    - name: Release
       uses: gytis/maven-release-action@master
       with:
         email: gytis@redhat.com
         profiles: release
-        doNotDeploy: true
