@@ -10,5 +10,5 @@ jobs:
     - name: Maven release action
       uses: gytis/maven-release-action@master
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        email: gytis@redhat.com 
+        email: gytis@redhat.com
+        profiles: release
